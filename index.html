@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo 40 Font + Cách Dùng</title>
+  <!-- Import 40 Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f8f8;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .font-demo {
+      background: white;
+      padding: 15px 20px;
+      margin: 12px 0;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    pre {
+      background: #eee;
+      padding: 6px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+    /* Font classes */
+    .roboto { font-family: 'Roboto', sans-serif; }
+    .open-sans { font-family: 'Open Sans', sans-serif; }
+    .lato { font-family: 'Lato', sans-serif; }
+    .montserrat { font-family: 'Montserrat', sans-serif; }
+    .poppins { font-family: 'Poppins', sans-serif; }
+    .raleway { font-family: 'Raleway', sans-serif; }
+    .ubuntu { font-family: 'Ubuntu', sans-serif; }
+    .nunito { font-family: 'Nunito', sans-serif; }
+    .merriweather { font-family: 'Merriweather', serif; }
+    .playfair { font-family: 'Playfair Display', serif; }
+    .oswald { font-family: 'Oswald', sans-serif; }
+    .roboto-slab { font-family: 'Roboto Slab', serif; }
+    .quicksand { font-family: 'Quicksand', sans-serif; }
+    .source-sans { font-family: 'Source Sans Pro', sans-serif; }
+    .fira-sans { font-family: 'Fira Sans', sans-serif; }
+    .fira-code { font-family: 'Fira Code', monospace; }
+    .inconsolata { font-family: 'Inconsolata', monospace; }
+    .pacifico { font-family: 'Pacifico', cursive; }
+    .dancing-script { font-family: 'Dancing Script', cursive; }
+    .comfortaa { font-family: 'Comfortaa', cursive; }
+    .abril { font-family: 'Abril Fatface', cursive; }
+    .anton { font-family: 'Anton', sans-serif; }
+    .arvo { font-family: 'Arvo', serif; }
+    .cabin { font-family: 'Cabin', sans-serif; }
+    .cairo { font-family: 'Cairo', sans-serif; }
+    .chakra { font-family: 'Chakra Petch', sans-serif; }
+    .crimson { font-family: 'Crimson Text', serif; }
+    .exo2 { font-family: 'Exo 2', sans-serif; }
+    .fredoka { font-family: 'Fredoka', sans-serif; }
+    .ibm-plex-sans { font-family: 'IBM Plex Sans', sans-serif; }
+    .ibm-plex-serif { font-family: 'IBM Plex Serif', serif; }
+    .josefin { font-family: 'Josefin Sans', sans-serif; }
+    .kanit { font-family: 'Kanit', sans-serif; }
+    .mukta { font-family: 'Mukta', sans-serif; }
+    .overpass { font-family: 'Overpass', sans-serif; }
+    .pt-sans { font-family: 'PT Sans', sans-serif; }
+    .pt-serif { font-family: 'PT Serif', serif; }
+    .signika { font-family: 'Signika', sans-serif; }
+    .titillium { font-family: 'Titillium Web', sans-serif; }
+    .work-sans { font-family: 'Work Sans', sans-serif; }
+  </style>
+</head>
+<body>
+  <h1>Demo 40 Font + Cách Dùng</h1>
+  <h4>Tác giả: Minh Nghĩa (Harry)</h4>
+  <h4>Thời gian tạo: 30/09/2025</h4>
+
+  <!-- 40 Font Demo -->
+  <div class="font-demo roboto"><h2>Roboto</h2><p>Ví dụ với Roboto</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Roboto', sans-serif;</pre></div>
+  <div class="font-demo open-sans"><h2>Open Sans</h2><p>Ví dụ với Open Sans</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Open Sans', sans-serif;</pre></div>
+  <div class="font-demo lato"><h2>Lato</h2><p>Ví dụ với Lato</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Lato', sans-serif;</pre></div>
+  <div class="font-demo montserrat"><h2>Montserrat</h2><p>Ví dụ với Montserrat</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Montserrat', sans-serif;</pre></div>
+  <div class="font-demo poppins"><h2>Poppins</h2><p>Ví dụ với Poppins</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Poppins', sans-serif;</pre></div>
+  <div class="font-demo raleway"><h2>Raleway</h2><p>Ví dụ với Raleway</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Raleway', sans-serif;</pre></div>
+  <div class="font-demo ubuntu"><h2>Ubuntu</h2><p>Ví dụ với Ubuntu</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Ubuntu', sans-serif;</pre></div>
+  <div class="font-demo nunito"><h2>Nunito</h2><p>Ví dụ với Nunito</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Nunito&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Nunito', sans-serif;</pre></div>
+  <div class="font-demo merriweather"><h2>Merriweather</h2><p>Ví dụ với Merriweather</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Merriweather', serif;</pre></div>
+  <div class="font-demo playfair"><h2>Playfair Display</h2><p>Ví dụ với Playfair Display</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Playfair Display', serif;</pre></div>
+  <div class="font-demo oswald"><h2>Oswald</h2><p>Ví dụ với Oswald</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Oswald', sans-serif;</pre></div>
+  <div class="font-demo roboto-slab"><h2>Roboto Slab</h2><p>Ví dụ với Roboto Slab</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Roboto Slab', serif;</pre></div>
+  <div class="font-demo quicksand"><h2>Quicksand</h2><p>Ví dụ với Quicksand</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Quicksand', sans-serif;</pre></div>
+  <div class="font-demo source-sans"><h2>Source Sans Pro</h2><p>Ví dụ với Source Sans Pro</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Source Sans Pro', sans-serif;</pre></div>
+  <div class="font-demo fira-sans"><h2>Fira Sans</h2><p>Ví dụ với Fira Sans</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Fira+Sans&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Fira Sans', sans-serif;</pre></div>
+  <div class="font-demo fira-code"><h2>Fira Code</h2><p>Ví dụ với Fira Code</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Fira Code', monospace;</pre></div>
+  <div class="font-demo inconsolata"><h2>Inconsolata</h2><p>Ví dụ với Inconsolata</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Inconsolata', monospace;</pre></div>
+  <div class="font-demo pacifico"><h2>Pacifico</h2><p>Ví dụ với Pacifico</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Pacifico', cursive;</pre></div>
+  <div class="font-demo dancing-script"><h2>Dancing Script</h2><p>Ví dụ với Dancing Script</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Dancing Script', cursive;</pre></div>
+  <div class="font-demo comfortaa"><h2>Comfortaa</h2><p>Ví dụ với Comfortaa</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Comfortaa', cursive;</pre></div>
+  <div class="font-demo abril"><h2>Abril Fatface</h2><p>Ví dụ với Abril Fatface</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Abril Fatface', cursive;</pre></div>
+  <div class="font-demo anton"><h2>Anton</h2><p>Ví dụ với Anton</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Anton&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Anton', sans-serif;</pre></div>
+  <div class="font-demo arvo"><h2>Arvo</h2><p>Ví dụ với Arvo</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Arvo&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Arvo', serif;</pre></div>
+  <div class="font-demo cabin"><h2>Cabin</h2><p>Ví dụ với Cabin</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Cabin', sans-serif;</pre></div>
+  <div class="font-demo cairo"><h2>Cairo</h2><p>Ví dụ với Cairo</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Cairo', sans-serif;</pre></div>
+  <div class="font-demo chakra"><h2>Chakra Petch</h2><p>Ví dụ với Chakra Petch</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Chakra Petch', sans-serif;</pre></div>
+  <div class="font-demo crimson"><h2>Crimson Text</h2><p>Ví dụ với Crimson Text</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Crimson+Text&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Crimson Text', serif;</pre></div>
+  <div class="font-demo exo2"><h2>Exo 2</h2><p>Ví dụ với Exo 2</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Exo+2&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Exo 2', sans-serif;</pre></div>
+  <div class="font-demo fredoka"><h2>Fredoka</h2><p>Ví dụ với Fredoka</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Fredoka&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Fredoka', sans-serif;</pre></div>
+  <div class="font-demo ibm-plex-sans"><h2>IBM Plex Sans</h2><p>Ví dụ với IBM Plex Sans</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'IBM Plex Sans', sans-serif;</pre></div>
+  <div class="font-demo ibm-plex-serif"><h2>IBM Plex Serif</h2><p>Ví dụ với IBM Plex Serif</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'IBM Plex Serif', serif;</pre></div>
+  <div class="font-demo josefin"><h2>Josefin Sans</h2><p>Ví dụ với Josefin Sans</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Josefin Sans', sans-serif;</pre></div>
+  <div class="font-demo kanit"><h2>Kanit</h2><p>Ví dụ với Kanit</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Kanit&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Kanit', sans-serif;</pre></div>
+  <div class="font-demo mukta"><h2>Mukta</h2><p>Ví dụ với Mukta</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Mukta&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Mukta', sans-serif;</pre></div>
+  <div class="font-demo overpass"><h2>Overpass</h2><p>Ví dụ với Overpass</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Overpass&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Overpass', sans-serif;</pre></div>
+  <div class="font-demo pt-sans"><h2>PT Sans</h2><p>Ví dụ với PT Sans</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=PT+Sans&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'PT Sans', sans-serif;</pre></div>
+  <div class="font-demo pt-serif"><h2>PT Serif</h2><p>Ví dụ với PT Serif</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=PT+Serif&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'PT Serif', serif;</pre></div>
+  <div class="font-demo signika"><h2>Signika</h2><p>Ví dụ với Signika</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Signika&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Signika', sans-serif;</pre></div>
+  <div class="font-demo titillium"><h2>Titillium Web</h2><p>Ví dụ với Titillium Web</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Titillium+Web&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Titillium Web', sans-serif;</pre></div>
+  <div class="font-demo work-sans"><h2>Work Sans</h2><p>Ví dụ với Work Sans</p><pre>&lt;link href="https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap" rel="stylesheet"&gt;</pre><pre>font-family: 'Work Sans', sans-serif;</pre></div>
+
+  <h1>Đã đến cuối trang, hãy kéo lên trên</h1>
+</body>
+</html>
